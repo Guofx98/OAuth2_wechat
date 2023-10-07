@@ -31,6 +31,7 @@ public class testController {
     public String pcCallback(String code, String state, HttpServletRequest request, HttpServletResponse response, HttpSession session) throws Exception{
         WeChatUser user = WechatUtil.getUserInfo(code);
         return JSON.toJSONString(user);
+
     }
 
 }
